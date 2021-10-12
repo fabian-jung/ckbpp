@@ -1,0 +1,9 @@
+[Unit]
+Description=ckbpp daemon
+
+[Service]
+ExecStart=/usr/local/bin/ckbpp
+After=ckb-next-daemon.service
+
+[Install]
+WantedBy=multi-user.target
